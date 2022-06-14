@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,133 @@
   <title>freeCodeCamp Survey Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
+  <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+
+  <main>
+
+    <form id="survey-form">
+
+      <fieldset>
+        <label for="name" id="name-label">Name </label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required />
+
+        <label for="email" id="email-label">Email </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email"required>
+
+        <label for="number" id="number-label">Age (optional) </label>
+        <input type="number" name="age" id="number" min="10" max="120" placeholder="Age">
+
+        <label for="role" id="role-label">Which option best describes your current role? </label>
+        <select id="role" required>
+          <option disabled selected value=>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <div>
+          <input class="inline" type="radio" name="recommend" id="definitely" value="definitely" checked>
+          <label for="definitely" class="inline"> Definitely</label>
+        </div>
+        <div>
+          <input class="inline" type="radio" name="recommend" id="maybe" value="maybe">
+          <label for="maybe" class="inline"> Maybe</label>
+        </div>
+        <div>
+          <input class="inline" type="radio" name="recommend" id="notSure" value="notSure">
+          <label for="notSure" class="inline"> Not sure</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <label for="favFeature" id="favFeature-label">What is your favorite feature of freeCodeCamp? </label>
+        <select id="favFeature" required>
+          <option disabled selected value=>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="frontend" value="frontend">
+          <label class="inline" for="">Front-end Projects</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="backend" value="backend">
+          <label class="inline" for="">Back-end Projects</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="dataVis" value="dataVis">
+          <label class="inline" for="">Data Visualization</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="challenges" value="challenges">
+          <label class="inline" for="">Challenges</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="challenges" value="challenges">
+          <label class="inline" for="">Open Source Community</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="gitter" value="gitter">
+          <label class="inline" for="">Gitter help rooms</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="videos" value="videos">
+          <label class="inline" for="">Videos</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="cityMeetups" value="cityMeetups">
+          <label class="inline" for="">City Meetups</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="wiki" value="wiki">
+          <label class="inline" for="">Wiki</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="forum" value="forum">
+          <label class="inline" for="">Forum</label>
+        </div>
+
+        <div>
+          <input class="inline" type="checkbox" name="improvements" id="courses" value="courses">
+          <label class="inline" for="">Additional Courses</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+
+  </main>
+
 </body>
+
 </html>
