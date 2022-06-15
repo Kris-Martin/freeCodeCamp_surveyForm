@@ -1,79 +1,89 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-  width: 100%;
-  height: 100vh;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  background-color: rgba(136, 136, 206, 0.7);
+    width: 100%;
+    height: 100vh;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    background-color: rgba(136, 136, 206, 0.7);
 }
 
 header {
-  margin: 1em auto;
-  text-align: center;
-  color: white;
+    margin: 1em auto;
+    text-align: center;
+    color: white;
 }
 
 h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 #description {
-  font-style: italic;
+    font-style: italic;
 }
 
 form {
-  width: 70vw;
-	min-width: 300px;
-  max-width: 600px;
-	margin: 0 auto;
-  background-color: rgb(27, 27, 50);
-  color: white;
-  padding: 2em 6em;
+    width: 70vw;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(27, 27, 50);
+    color: white;
+    padding: 2em 6em;
 }
 
 fieldset {
-  border: none;
-	padding: 1rem 0;
+    border: none;
+    padding: 1rem 0;
 }
 
 label {
-  display: block;
-	margin: 0.5rem 0;
+    display: block;
+    margin: 0.5rem auto 0.5rem auto;
+    padding: 1em auto;
 }
 
 input,
+legend,
 select {
-  margin: 10px 0 0 0;
-	width: 100%;
-  min-height: 2em;
+    margin: 0.5rem auto 0.5rem auto;
+    width: 100%;
+    min-height: 2em;
 }
 
 .inline {
-  display: inline;
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
+    display: inline;
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
 }
 
 textarea {
-  width: 100%;
-  min-height: 7rem;
-  resize: vertical;
+    width: 100%;
+    min-height: 7rem;
+    resize: vertical;
 }
 
 input[type="submit"] {
-  padding: 0.5em;
-  background-color: #37af65;
-  color: white;
+    padding: 0.5em;
+    background-color: #37af65;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: lightseagreen;
+}
+
+em {
+    font-size: 0.75em;
 }
